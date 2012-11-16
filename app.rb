@@ -10,6 +10,6 @@ class Application
       @out.puts "Hello there"
     end
 
-    @out.puts "Have a nice day!"
+    @out.puts "Have a nice day."
   end
 end

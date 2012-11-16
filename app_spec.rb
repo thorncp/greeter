@@ -16,6 +16,6 @@ describe "The Application" do
   it "should greet with well wishes" do
     out = StringIO.new
     Application.new(out).execute(["Bob", "Johnson"])
-    out.string.should include "Have a nice day!"
+    out.string.should include "Have a nice day."
   end
 end
