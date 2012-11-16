@@ -6,4 +6,10 @@ describe "The Application" do
     Application.new(out).execute
     out.string.should == "Hello there\n"
   end
+
+  it "should greet by name" do
+    out = StringIO.new
+    Application.new(out).execute(["Bob", "Johnson"])
+    out.string.should == "Hello there, Bob Johnson\n"
+  end
 end

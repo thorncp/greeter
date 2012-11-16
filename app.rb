@@ -3,7 +3,11 @@ class Application
     @out = out
   end
 
-  def execute
-    @out.puts "Hello there"
+  def execute(args = [])
+    if args.any?
+      @out.puts "Hello there, #{args.join(' ')}"
+    else
+      @out.puts "Hello there"
+    end
   end
 end
