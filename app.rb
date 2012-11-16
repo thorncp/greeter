@@ -5,9 +5,9 @@ class Application
 
   def execute(args = [])
     if args.any?
-      @out.puts "Hello there, #{args.join(' ')}"
+      @out.puts "Hi there, #{args.join(' ')}"
     else
-      @out.puts "Hello there"
+      @out.puts "Hi there"
     end
   end
 end
